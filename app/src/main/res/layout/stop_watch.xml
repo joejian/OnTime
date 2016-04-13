@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right|center">
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:weightSum="36"
+        android:background="@color/black">
+        <Button
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/reset"/>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="00:00:00"
+            android:textSize="16dp"
+            android:layout_weight="10"
+            android:background="@color/black"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/timems"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical|left"
+            android:text=".00"
+            android:textSize="16dp"
+            android:background="@color/black"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/start"
+            android:background="@drawable/play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:onClick="start" />
+        <Button
+            android:id="@+id/save"
+            android:background="@color/red"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:onClick="save" />
+        <Button
+            android:id="@+id/reset"
+            android:background="@drawable/reset2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:onClick="reset"/>
+
+    </LinearLayout>
+
+</LinearLayout>
